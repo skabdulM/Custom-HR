@@ -43,7 +43,7 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Employee": "public/js/employee.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -137,13 +137,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Employee": {
+		"before_save": "custom_hr.overrides.employee.on_update_employee",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
@@ -242,3 +240,11 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+	{"doctype": "Workflow", "filters": [["name", "=", "Employee Lifecycle"]]},
+	{"doctype": "Workflow State", "filters": [["name", "in", ["Joining", "Probation", "Confirmed", "Exit"]]]},
+	{
+		"doctype": "Workflow Action Master",
+		"filters": [["name", "in", ["Move to Probation", "Confirm Employee", "Exit Employee"]]],
+	},
+]
