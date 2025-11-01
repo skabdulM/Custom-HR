@@ -1,0 +1,38 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-01 16:17:18.549493",
+  "name": "Joining",
+  "style": "",
+  "workflow_state_name": "Joining"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-01 18:18:48.307880",
+  "name": "Probation",
+  "style": "Primary",
+  "workflow_state_name": "Probation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-01 18:12:13.913680",
+  "name": "Exit",
+  "style": "Danger",
+  "workflow_state_name": "Exit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-11-01 18:12:09.830590",
+  "name": "Confirmed",
+  "style": "Success",
+  "workflow_state_name": "Confirmed"
+ }
+]

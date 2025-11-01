@@ -1,0 +1,23 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-01 16:30:09.001760",
+  "name": "Move to Probation",
+  "workflow_action_name": "Move to Probation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-01 16:30:23.243508",
+  "name": "Confirm Employee",
+  "workflow_action_name": "Confirm Employee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-11-01 16:30:45.162042",
+  "name": "Exit Employee",
+  "workflow_action_name": "Exit Employee"
+ }
+]
